@@ -126,6 +126,7 @@ body {
   max-width: 450px;
   line-height: 150%;
   color: #FFFFFF;
+  text-align: justify;
 }
 
 .form::before{
@@ -138,6 +139,56 @@ body {
   width: 90px;
   height: 90px;
   opacity: 0.3;
-  bottom: -50px;
-  right: -45px;
+  bottom: -45px;
+  right: -35px;
+}
+
+@media(max-width: 700px){
+  .container{
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .left{
+    width: 85%;
+    padding: 24px 0;
+  }
+
+  .left h1{
+    margin-bottom: 18px;
+  }
+
+  .right{
+    width: 100%;
+    height: 100%;
+    padding: 32px 0;
+  }
+
+  .form::before{
+    background-size: 80px;
+    width: 82px;
+    height: 82px;
+    bottom: -40px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 500px){
+  .info-image{
+    width: 80%;
+  }
+
+  .subtitle{
+    margin-bottom: 18px;
+    font-size: 32px;
+    max-width: 400px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .description{
+    max-width: 400px;
+    padding: 0 15px;
+    text-align: center;
+  }
 }
