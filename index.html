@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!-- Carregando a fonte roboto para usar no projeto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,44 +14,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <div id="container-left">
-      <div id="login-container">
+  
+  <main class="container">
+
+    <section class="left">
+        <h1>Minha conta</h1>
         
-        <div class="title">
-          <h1>Minha conta</h1>
-        </div>
-        
-        <form>
-          <input class="input-email" type="text" name="email" placeholder="Digite seu email">
-          <input class="input-password" type="password" name="password" placeholder="Digite sua senha">
-          <button class="input-button" type="submit">Acessar</button>
+        <form class="form">
+          <input class="input" type="email" placeholder="Digite seu email">
+          <input class="input" type="password" placeholder="Digite sua senha">
+          <button class="button" type="submit">Acessar</button>
         </form>
 
-        <div class="link-button">
-          <p>Novo por aqui? <a href="#">Cadastre-se.</a></p>
+        <div class="link-area">
+          <span class="link">Novo por aqui? <a href="#">Cadastre-se.</a></span>
         </div>
 
-      </div>
-    </div>
+    </section>
     
 
 
-    <div id="container-right">
-      <div id="info-container">
-
-        <div class="info-image">
-          <img src="assets/info.png" alt="Imagem ilustrativa">
-        </div>
-        
-        <div class="info-text">
-
-          <h1>Leve sua carreia ao <br>próximo nível</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Mollitia sunt reiciendis quasi reprehenderit praesentium <br>quam doloribus molestias, incidunt</p>
+    <section class="right">
+          <img class="info-image" src="assets/info.png" alt="Imagem ilustrativa">
           
-        </div>
-      </div>
-    </div>
+          <h2 class="subtitle">Leve a sua carreia ao próximo nível.</h2>
+          
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt reiciendis quasi reprehenderit praesentium quam doloribus.</p>
+    </section>
 
   </main>
 </body>
