@@ -7,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* TELA DE LOGIN */
+/* TELA INTEIRA */
 body {
   background-color: #FFFFFF;
   width: 100%;
@@ -94,6 +94,12 @@ body {
   text-decoration: none;
   font-weight: normal;
   margin-left: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s linear;
+}
+
+.link a:hover{
+  color: #2499f9;
 }
 
 /* CONTAINER DIREITA */
@@ -129,20 +135,7 @@ body {
   text-align: justify;
 }
 
-.form::before{
-  content: '';
-  position: absolute;
-  background-image: url('assets/code.svg');
-  background-size: 90px;
-  background-repeat: no-repeat;
-  z-index: 1;
-  width: 90px;
-  height: 90px;
-  opacity: 0.3;
-  bottom: -45px;
-  right: -35px;
-}
-
+/* RESPONSIVIDADE */
 @media(max-width: 700px){
   .container{
     flex-direction: column;
